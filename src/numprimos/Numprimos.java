@@ -16,6 +16,10 @@ public class NumerosPrimos {
 
     public static boolean p = false;
     
+    public int pedirdigitos(){
+        
+    }
+    
     public static void main(String arg[])
         {
         int numDigitos=0;
