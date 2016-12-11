@@ -16,7 +16,7 @@ public class NumerosPrimos {
     //Considero solo hasta numeros menores a 100000 (5 digitos), 
     //por el hecho de k buscar numeros primos a partir de 6 digitos, el proceso se hace muy lento.
 
-    public static boolean p = false;
+    public static boolean primo = false;
     
     public int pedirdigitos(){
        Scanner sc = new Scanner(System.in);
@@ -40,11 +40,13 @@ public class NumerosPrimos {
         }
         return contador;
             
-    public void calcprimos(int i){        
-                   if (i < 4) p = true;
+    public void calcprimos(int i){   
+        
+            if (i < 4){
+             primo = true;
             else
             {
-            if (i % 2 == 0) p = false; 
+            if (i % 2 == 0) primo = false; 
                 else
                 {
                     int contador1 = 0;  
@@ -59,11 +61,11 @@ public class NumerosPrimos {
                             if (contador1 == 2) i1 = limite + 1;
                     }
  
-        if (contador1 == 1) p = true;
+        if (contador1 == 1) primo = true;
             } 
         } 
      
-                if (p == true) 
+                if (primo == true) 
                     System.out.println(i);    
             }
         }
