@@ -40,8 +40,7 @@ public class NumerosPrimos {
         }
         return contador;
             
-            
-            if(ndigitos==numDigitos){
+    public void calcprimos(int i){        
                    if (i < 4) p = true;
             else
             {
