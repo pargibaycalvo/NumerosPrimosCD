@@ -68,8 +68,8 @@ public class NumerosPrimos {
             } 
         }
     }
-     
-                if (primo == true) 
+    public void imprime(int i){ 
+                if (primo == true){ 
                     System.out.println(i);    
             }
         }
