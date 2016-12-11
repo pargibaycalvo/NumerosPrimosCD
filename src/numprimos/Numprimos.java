@@ -31,8 +31,7 @@ public class NumerosPrimos {
         return num;
     }
     
-    
-        
+    public int calcdigitos(int numero){
             int divisionEntera = i;
  
             int contador=0;
