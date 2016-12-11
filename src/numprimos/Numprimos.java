@@ -32,16 +32,13 @@ public class NumerosPrimos {
     }
     
     public int calcdigitos(int numero){
-            int divisionEntera = i;
- 
-            int contador=0;
- 
-            while (divisionEntera != 0)
-        {
+            int divisionEntera = numero;
+            int contador=0; 
+            while (divisionEntera != 0){
             divisionEntera = divisionEntera / 10;
             contador++;
         }
-        ndigitos=contador;
+        return contador;
             
             
             if(ndigitos==numDigitos){
