@@ -4,19 +4,26 @@
  * and open the template in the editor.
  */
 package numprimos;
-
 /**
  *
  * @author Ped90
  */
+import NumerosPrimos.NumerosPrimos;
 public class calculo {
     public static void main(String arg[]){
-        int numDigitos=0;
+        NumerosPrimos p1 = new NumerosPrimos();
+        int numDigitos = p1.pedirdigitos();
         int ndigitos=0;
-        numDigitos=Integer.parseInt(arg[0]);
-        if(numDigitos<=0)
-        System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
-        for(int i = 1; i <= 99999; i++ )
+        for(int i = 1; i <= 99999; i++ )      
+        ndigitos = p1.calcdigitos(i);
+        
+        
+        if(ndigitos == numDigitos){
+            p1.calcprimos(i);
+            p1.imprime(i);
+        }
+        
+        
         {
-    
+        }
 }

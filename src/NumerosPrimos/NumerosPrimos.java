@@ -1,4 +1,4 @@
-package numerosprimos;
+package NumerosPrimos;
 
 import java.util.Scanner;
 
@@ -40,7 +40,7 @@ public class NumerosPrimos {
         }
         return contador;
             
-    public void calcprimos(int i){   
+    public void calculoprimos(int i){   
         
             if (i < 4){
              primo = true;
@@ -77,4 +77,3 @@ public class NumerosPrimos {
  
        
  
-}
