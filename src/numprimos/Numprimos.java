@@ -31,8 +31,7 @@ public class NumerosPrimos {
         return num;
     }
     
-    public static void main(String arg[])
-        {
+    
         int numDigitos=0;
         int ndigitos=0;
         numDigitos=Integer.parseInt(arg[0]);
