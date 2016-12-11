@@ -1,5 +1,7 @@
 package numerosprimos;
 
+import java.util.Scanner;
+
 /**
  *
  * @author 
@@ -17,7 +19,16 @@ public class NumerosPrimos {
     public static boolean p = false;
     
     public int pedirdigitos(){
-        
+       Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un numero entre 1 y 5:");
+       int num = sc.nextInt();
+        System.out.println("");
+        while(num<1||num>5){
+            System.out.println("Introduzca un numero entre 1 y 5:");
+            num = sc-nexInt();
+            System.out.println("");
+        }
+        return num;
     }
     
     public static void main(String arg[])
