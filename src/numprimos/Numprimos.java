@@ -25,7 +25,7 @@ public class NumerosPrimos {
         System.out.println("");
         while(num<1||num>5){
             System.out.println("Introduzca un numero entre 1 y 5:");
-            num = sc-nexInt();
+            num = sc.nextInt();
             System.out.println("");
         }
         return num;
