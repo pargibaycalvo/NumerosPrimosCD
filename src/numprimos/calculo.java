@@ -10,7 +10,13 @@ package numprimos;
  * @author Ped90
  */
 public class calculo {
-    public static void main(String arg[])
+    public static void main(String arg[]){
+        int numDigitos=0;
+        int ndigitos=0;
+        numDigitos=Integer.parseInt(arg[0]);
+        if(numDigitos<=0)
+        System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
+        for(int i = 1; i <= 99999; i++ )
         {
     
 }
